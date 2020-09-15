@@ -1,0 +1,67 @@
+:host {
+    // btn more
+    .fab-container {
+        position: fixed;
+        cursor: pointer;
+        border: 1px solid #C9CCD3;
+        padding: 16px;
+        top: 15px;
+        left: 50px;
+        z-index: 999;
+        color: #C9CCD3;
+        font-size: 18px;
+        font-weight: 600;
+        -webkit-box-shadow: 0px 9px 13px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 9px 13px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 9px 13px -6px rgba(0, 0, 0, 0.75);
+    }
+    .fab-container:focus {
+        outline: 0;
+    }
+    .fab-icon-holder {
+        .material-icons {
+            background: #445374;
+            color: white;
+            border-radius: 100%;
+            font-size: 45px;
+            width: 45px;
+            height: 45px;
+            transition: 0.4s;
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .btn:focus {
+        outline: 0
+    }
+    img {
+        margin: 8px 8px 0px 8px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+    .text-information {
+        color: #a1aaba;
+        font-weight: 500;
+        font-size: 23px;
+        margin-top: 10px;
+        border-bottom: 1px solid #a1aaba;
+    }
+    .text-information-title {
+        color: #72819c;
+        font-weight: 500;
+        font-size: 23px;
+        margin-top: 10px;
+        border-bottom: 1px solid #a1aaba;
+    }
+    .information {
+        margin-left: 20px;
+    }
+}

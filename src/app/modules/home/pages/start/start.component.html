@@ -1,0 +1,19 @@
+<mat-divider></mat-divider>
+<div class="container">
+    <div *ngFor="let movie of movies" class="card">
+        <div class="flip-container">
+            <div class="flipper required">
+                <img class="front" [src]="getImge(movie.poster_path)" alt="" width="290" height="180">
+                <div class="back" (click)="itemRouter(movie.id)">
+                    <label for="">Rating: {{movie.popularity}}</label>
+                    <p>{{movie.overview}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="title" (click)="itemRouter(movie.id)">{{movie.title | uppercase}}</div>
+
+    </div>
+    <div *ngIf="!movies || movies.length === 0">
+        No data found for your search, or try again.
+    </div>
+</div>

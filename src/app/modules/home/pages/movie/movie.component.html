@@ -1,0 +1,20 @@
+<mat-divider></mat-divider>
+<div class="fab-container" [routerLink]="[ '/home/start' ]" matTooltip="HOME" matTooltipPosition="above">
+    BACK
+</div>
+<div class="container">
+    <div>
+        <img class="front" [src]="getImge(movie.backdrop_path)" alt="" width="700" height="500">
+    </div>
+    <div class="information">
+        <div class="text-information-title">{{movie.title}}</div>
+        <div class="text-information">1.&nbsp;&nbsp; {{movie.overview}}</div>
+        <div class="text-information">2.&nbsp;&nbsp; {{movie.release_date}}</div>
+        <div class="text-information">3.&nbsp;&nbsp;
+            <a [href]="movie.homepage"> {{movie.homepage}}</a></div>
+        <div class="text-information">4.&nbsp;&nbsp; Production countries:</div>
+        <div class="text-information" *ngFor="let item of movie.production_countries">&nbsp;&nbsp;*{{item.name}}</div>
+        <div class="text-information">5.&nbsp;&nbsp; GENEROS</div>
+        <div class="text-information" *ngFor="let item of movie.genres">&nbsp;&nbsp;*{{item.name}}</div>
+    </div>
+</div>
